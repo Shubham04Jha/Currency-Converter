@@ -1,0 +1,2 @@
+1. instead of the currencies how about converting it to country that will be helpful!
+2. print the currency code after the text box!
