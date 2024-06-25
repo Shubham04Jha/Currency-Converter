@@ -85,15 +85,15 @@ const getExchangeRate = async (selected)=>{
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-        console.log("Data received from API:", data);
+        // console.log("Data received from API:", data);
 
         const key = fromCountry
-        console.log("Key to access in data object:", key);
+        // console.log("Key to access in data object:", key);
 
         if (data.hasOwnProperty(key)) {
 
             const innerObj = data[key];
-            console.log(typeof(innerObj));
+            // console.log(typeof(innerObj));
 
             const excRate = innerObj[toCountry];
             // console.log("Exchange rate retrieved:", excRate);
